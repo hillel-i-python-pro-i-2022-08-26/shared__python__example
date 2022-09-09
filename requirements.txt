@@ -1,2 +1,6 @@
 # Autoformatter
 black==22.8.0
+# Check codestyle
+flake8==5.0.4
+
+pre-commit==2.20.0
