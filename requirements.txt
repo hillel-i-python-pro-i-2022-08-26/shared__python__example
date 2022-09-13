@@ -4,3 +4,9 @@ black==22.8.0
 flake8==5.0.4
 
 pre-commit==2.20.0
+
+# Requests
+requests==2.28.1
+
+# Generate names
+faker==14.2.0
