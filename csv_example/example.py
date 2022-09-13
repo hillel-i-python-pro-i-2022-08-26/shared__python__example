@@ -22,9 +22,7 @@ def write_to_csv(path: pathlib.Path, items_amount: int = 10):
         writer.writeheader()
 
         for _ in range(items_amount):
-            writer.writerow(
-                {KEY__NAME: fake.first_name(), KEY__AGE: random.randint(10, 90)}
-            )
+            writer.writerow({KEY__NAME: fake.first_name(), KEY__AGE: random.randint(10, 90)})
 
 
 class Human(NamedTuple):
@@ -47,7 +45,7 @@ def main():
 
     write_to_csv(path=path_to_csv)
 
-    humans = read_from_csv(path=path_to_csv)
+    humans = read_from_csv(path=path_to_csv)  # noqa: F841
 
     print()
 
