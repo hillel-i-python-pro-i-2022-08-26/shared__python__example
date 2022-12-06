@@ -1,5 +1,6 @@
+from collections.abc import Iterator
 from random import randint
-from typing import Iterator, Protocol, TypeAlias, NamedTuple, Any
+from typing import Protocol, TypeAlias, NamedTuple, Any
 
 from faker import Faker
 
